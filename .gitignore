@@ -14,6 +14,3 @@ data/raw/*.tgz
 
 # Generated processed data
 data/processed/*
-
-# Screenshots
-screenshots/*

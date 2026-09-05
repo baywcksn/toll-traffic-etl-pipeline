@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment & secrets
+.env
+
+# Airflow logs
+logs/*
+
+# Coursera raw dataset
+data/raw/*.tgz
+
+# Generated processed data
+data/processed/*
+
+# Screenshots
+screenshots/*

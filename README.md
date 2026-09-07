@@ -44,18 +44,19 @@ The main objectives of this project are:
                             │
                             ▼
                     ┌───────────────┐
-                    │   tolldata.tgz│
+                    │ tolldata.tgz  │
                     └───────┬───────┘
                             │
                             ▼
                     ┌───────────────┐
-                    │   unzip_data  │
+                    │  unzip_data   │
                     └───────┬───────┘
                             │
              ┌──────────────┼──────────────┐
              │              │              │
              ▼              ▼              ▼
-       vehicle-data.csv  tollplaza-data.tsv  payment-data.txt
+       vehicle-data.csv  tollplaza-  payment-data.txt
+                          data.tsv  
              │              │              │
              ▼              ▼              ▼
        Extract CSV      Extract TSV     Extract Fixed Width
@@ -64,7 +65,7 @@ The main objectives of this project are:
                             │
                             ▼
                     ┌───────────────┐
-                    │ consolidate   │
+                    │  consolidate  │
                     │     _data     │
                     └───────┬───────┘
                             │
@@ -74,7 +75,7 @@ The main objectives of this project are:
                     └───────┬───────┘
                             │
                             ▼
-                    transformed_data.csv
+                   transformed_data.csv
 ```
 
 ---
@@ -103,14 +104,14 @@ The pipeline follows a sequential ETL process:
                 │
                 ▼
 ┌────────────────────────────────┐
-│   extract_data_from_fixed_width│
+│  extract_data_from_fixed_width │
 │     Extract fixed-width data   │
 └───────────────┬────────────────┘
                 │
                 ▼
 ┌────────────────────────────────┐
-│        consolidate_data        │
-│      Combine extracted data    │
+│       consolidate_data         │
+│     Combine extracted data     │
 └───────────────┬────────────────┘
                 │
                 ▼
